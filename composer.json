@@ -1,0 +1,20 @@
+{
+  "name": "alaa-hany/chcon",
+  "description": "Pure PHP character encoding conversion library. Supported over 350 character encodings.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Alaahany\\Chcon\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Alaa Hany",
+      "email": "elboray.alaa1@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+  }
+}
