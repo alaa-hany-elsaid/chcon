@@ -10,7 +10,7 @@ class Chcon
     {
         if (self::$converter == null) {
             self::$converter = new Converter;
-            self::$converter->setReplaceHandler(function ($from, $to, $text) {
+            self::$converter->setReplaceHandler(function ( $text) {
                 return $text;
             });
         }
