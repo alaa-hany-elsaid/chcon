@@ -6,13 +6,28 @@ class Chcon
 {
     private  static $converter = null;
 
-    private static function getConverter()
+    public static function getConverter()
     {
         if (self::$converter == null) {
             self::$converter = new Converter;
+            self::$converter->setReplaceHandler(function ($from, $to, $text) {
+                return $text;
+            });
         }
         return self::$converter;
     }
+
+
+    public static function setConverter(Converter  $converter)
+    {
+        self::$converter = $converter;
+    }
+
+
+
+
+
+
 
     /**
      * Converts between different charsets
